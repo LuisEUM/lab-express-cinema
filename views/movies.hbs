@@ -1,14 +1,14 @@
 <div class=" d-flex justify-content-center align-items-center">
-    <div class="d-flex justify-content-center  bg-gradient shadow rounded p-4 col-sm-8">
+    <div class="d-flex justify-content-center bg-gradient shadow rounded p-4 col-sm-8">
         <div class="row">
         <hr>
             {{#each movies as |movie|}}
                 <div class="col-3">
-                    <div class="card mb-4 shadow">
+                    <div class="card mb-4 shadow d-flex justify-content-center align-items-center text-center">
                         <img src="{{movie.image}}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">{{task.movie}}</h5>
-                            <a href="tasks/{{movie.id}}" class="btn btn-primary">See detail</a>
+                            <h6 class="card-title">{{movie.title}}</h6>
+                            <a href="/movies/{{movie.id}}" class="btn btn-primary">See Details</a>
                         </div>
                     </div>
                 </div>

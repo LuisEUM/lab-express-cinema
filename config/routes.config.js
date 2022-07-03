@@ -6,5 +6,6 @@ const movies = require("../controllers/movies.controller");
 // Routes here
 router.get('/', misc.home)
 router.get('/movies', movies.list)
+router.get('/movies/:details', movies.details)
 
 module.exports = router;
